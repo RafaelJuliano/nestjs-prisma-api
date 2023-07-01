@@ -1,4 +1,4 @@
-import { Injectable, NestInterceptor, ExecutionContext, CallHandler, UnauthorizedException, NotFoundException } from '@nestjs/common';
+import { Injectable, NestInterceptor, ExecutionContext, CallHandler, NotFoundException } from '@nestjs/common';
 import { Observable, catchError } from 'rxjs';
 import { NotFoundError } from '../errors/NotFoundError';
 
