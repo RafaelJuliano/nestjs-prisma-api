@@ -9,17 +9,17 @@ import { UserEntity } from '../entities/user.entity';
 export class UsersRepository {
   constructor(private readonly prisma: PrismaService) { }
 
-  async create(createUserDto: CreateUserDto): Promise<UserEntity> {
+  create(createUserDto: CreateUserDto): Promise<UserEntity> {
     return this.prisma.user.create({
       data: createUserDto
     })
   }
 
-  async findAll(): Promise<UserEntity[]> {
+  findAll(): Promise<UserEntity[]> {
     return this.prisma.user.findMany()
   }
 
-  async findOne(id: number): Promise<UserEntity> {
+  findOne(id: number): Promise<UserEntity> {
     return this.prisma.user.findUnique({
       where: {
         id
