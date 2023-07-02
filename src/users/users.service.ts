@@ -2,8 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
 import { UsersRepository } from './repositories/User.repository';
-import { NotFoundError } from 'src/common/errors/NotFoundError';
-import { UnauthorizedError } from 'src/common/errors/UnauthorizedError';
+import { NotFoundError } from '../common/errors/NotFoundError';
 import { UserEntity } from './entities/user.entity';
 
 @Injectable()

@@ -4,7 +4,7 @@ import { PrismaService } from '../../prisma/prisma.service';
 import { CreatePostDto } from '../dto/create-post.dto';
 import { PostEntity } from '../entities/post.entity';
 import { UpdatePostDto } from '../dto/update-post.dto';
-import { NotFoundError } from 'src/common/errors/NotFoundError';
+import { NotFoundError } from '../../common/errors/NotFoundError';
 
 
 @Injectable()

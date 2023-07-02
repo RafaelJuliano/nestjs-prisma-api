@@ -3,7 +3,7 @@ import { CreatePostDto } from './dto/create-post.dto';
 import { UpdatePostDto } from './dto/update-post.dto';
 import { PostsRepository } from './repositories/Posts.repository';
 import { PostEntity } from './entities/post.entity';
-import { NotFoundError } from 'src/common/errors/NotFoundError';
+import { NotFoundError } from '../common/errors/NotFoundError';
 
 @Injectable()
 export class PostsService {
