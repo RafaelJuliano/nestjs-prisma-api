@@ -25,3 +25,16 @@ services:
     environment:
       - POSTGRES_PASSWORD=docker
       - POSTGRES_DB=prismaapi
+
+  dbtest:
+    build: .docker/postgres
+    container_name: prismaapi-db-test
+    restart: always
+    tty: true
+    ports:
+      - '5433:5432'
+    volumes:
+      - .docker/dbdatatest:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_PASSWORD=docker
+      - POSTGRES_DB=testdb

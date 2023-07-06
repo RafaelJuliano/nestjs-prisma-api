@@ -1,5 +1,6 @@
 .env
 /.docker/dbdata
+/.docker/dbdatatest
 
 # compiled output
 /dist
